@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Sederhana</title>
+    <link rel="icon" type="image/png" href="gambar/icon.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h2>Form Sederhana</h2>
+
+    <form action="/action_page.php" method="get" target="_blank">
+      <label for="depan">Nama depan:</label><br />
+      <input type="text" id="depan" name="i_name" value="Budi" /><br /><br />
+
+      <label for="n_belakang">Nama Belakang:</label><br />
+      <input
+        type="text"
+        id="n_belakang"
+        name="i_belakan"
+        value="Prawira"
+      /><br /><br />
+
+      <input type="submit" value="Kirim" />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <p>
+      Berdasarkan percobaan yang dilakukan, tombol Reset berfungsi untuk
+      mengembalikan nilai input ke nilai awal sesuai atribut value. Tombol Kirim
+      (Submit) akan mengirimkan data ke halaman yang ditentukan pada atribut
+      action. Jika menggunakan method GET, data akan terlihat pada URL,
+      sedangkan jika menggunakan POST, data tidak ditampilkan di URL karena
+      dikirim melalui body request. Atribut target menentukan di mana hasil
+      pengiriman ditampilkan, seperti _self di halaman yang sama atau _blank di
+      tab baru.
+    </p>
+  </body>
+</html>
