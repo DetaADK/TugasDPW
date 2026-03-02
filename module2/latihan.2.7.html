@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Map</title>
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Judul/Header Website</h1>
+    </div>
+
+    <div id="main">
+      <div id="link">
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </div>
+
+      <div id="content">
+        <img src="gambar/workplace.jpg" alt="Workplace" usemap="#petagambar" />
+
+        <map name="petagambar">
+          <area
+            shape="rect"
+            coords="34,44,270,350"
+            alt="Computer"
+            href="https://en.wikipedia.org/wiki/Computer"
+          />
+
+          <area
+            shape="rect"
+            coords="290,172,333,250"
+            alt="Phone"
+            href="https://en.wikipedia.org/wiki/Telephone"
+          />
+
+          <area
+            shape="rect"
+            coords="337,300,44"
+            alt="Coffee"
+            href="https://en.wikipedia.org/wiki/Coffee"
+          />
+        </map>
+
+        <p>
+          Tag HTML &lt;map&gt; mendefinisikan peta gambar. Peta gambar adalah
+          gambar dengan area yang dapat diklik. Area ditentukan dengan satu atau
+          lebih tag &lt;area&gt;.
+        </p>
+      </div>
+    </div>
+
+    <div id="footer">
+      <i>copyright@nama_nim2023</i>
+    </div>
+  </body>
+</html>

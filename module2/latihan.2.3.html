@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Judul/Header Website</h1>
+    </div>
+
+    <div id="main">
+      <div id="link">
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </div>
+
+      <div id="content">
+        <fieldset>
+          <legend>Form Pendaftaran Mahasiswa Baru</legend>
+          <form action="proses.php" method="POST">
+            <table>
+              <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" name="nama" /></td>
+              </tr>
+              <tr>
+                <td>Tempat/Tanggal Lahir</td>
+                <td>
+                  <input type="text" name="tempat_lahir" size="10" /> /
+                  <select name="tgl">
+                    <script>
+                      for (let i = 1; i <= 31; i++)
+                        document.write(`<option>${i}</option>`);
+                    </script>
+                  </select>
+                  <select name="bln">
+                    <script>
+                      for (let i = 1; i <= 12; i++)
+                        document.write(`<option>${i}</option>`);
+                    </script>
+                  </select>
+                  <select name="thn">
+                    <script>
+                      for (let i = 1989; i <= 1994; i++)
+                        document.write(`<option>${i}</option>`);
+                    </script>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Agama</td>
+                <td>
+                  <select name="agama">
+                    <option>-PILIH-</option>
+                    <option>Islam</option>
+                    <option>Kristen</option>
+                    <option>Katolik</option>
+                    <option>Hindu</option>
+                    <option>Budha</option>
+                    <option>Konghucu</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                  <input type="radio" name="jk" value="Laki-laki" /> Laki-laki
+                  <input type="radio" name="jk" value="Perempuan" /> Perempuan
+                </td>
+              </tr>
+              <tr>
+                <td>No. Ijazah SMA/MA</td>
+                <td><input type="text" name="no_ijazah" /></td>
+              </tr>
+              <tr>
+                <td>Foto (Ukuran File Maks. 20 KB)</td>
+                <td><input type="file" name="foto" /></td>
+              </tr>
+              <tr>
+                <td>Nama Ayah</td>
+                <td><input type="text" name="nama_ayah" /></td>
+              </tr>
+              <tr>
+                <td>Nama Ibu</td>
+                <td><input type="text" name="nama_ibu" /></td>
+              </tr>
+              <tr>
+                <td>Alamat Rumah</td>
+                <td>
+                  <textarea name="alamat_rumah" rows="4" cols="30"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>No. Telp</td>
+                <td><input type="text" name="telp" /></td>
+              </tr>
+              <tr>
+                <td>Nama Sekolah Asal</td>
+                <td><input type="text" name="sekolah_asal" /></td>
+              </tr>
+              <tr>
+                <td>Alamat Sekolah Asal</td>
+                <td>
+                  <textarea name="alamat_sekolah" rows="4" cols="30"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>Jurusan Dipilih</td>
+                <td>
+                  <select name="jurusan">
+                    <option>-PILIH-</option>
+                    <option>Komputerisasi Akuntansi</option>
+                    <option>Administrasi Bisnis</option>
+                    <option>Teknik Komputer Kontrol</option>
+                    <option>Teknik Listrik</option>
+                    <option>Mesin Otomotif</option>
+                    <option>Perkeretaapian</option>
+                    <option>Teknologi Informasi</option>
+                    <option>Akuntansi</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Tahu informasi ini dari:</td>
+                <td>
+                  <input type="checkbox" name="info[]" value="Koran" /> Koran
+                  <input type="checkbox" name="info[]" value="Website" />
+                  Website
+                  <input type="checkbox" name="info[]" value="Televisi" />
+                  Televisi
+                  <input type="checkbox" name="info[]" value="Radio" /> Radio
+                  <input type="checkbox" name="info[]" value="Teman" /> Teman
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input type="submit" value="DAFTAR" />
+                  <input type="reset" value="BATAL" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+
+    <div id="footer">
+      <i>copyright@nama_nim2023</i>
+    </div>
+  </body>
+</html>
