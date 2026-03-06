@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Belajar Grid</title>
+
+    <style>
+      .grid-container {
+        display: grid;
+        grid-gap: 50px;
+        background-color: #2196f3;
+        grid-template-columns: auto auto auto auto;
+        padding: 10px;
+      }
+
+      /* SKENARIO 1 */
+      .item1 {
+        grid-row: 1 / 4;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      /* SKENARIO 2 (aktifkan jika skenario 1 dihapus) */
+      .item1 {
+        grid-column: 1 / 4;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Latihan CSS Grid</h2>
+
+    <div class="grid-container">
+      <div class="item1">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+    </div>
+
+    <div>
+      Kesimpulan: <br /><br />
+
+      Skenario 1:<br />
+      Properti <b>grid-row: 1 / 4</b> membuat item pertama memanjang secara
+      vertikal dari baris 1 sampai baris 4 sehingga item tersebut lebih tinggi
+      dari item lainnya.<br /><br />
+
+      Skenario 2:<br />
+      Properti <b>grid-column: 1 / 4</b> membuat item pertama melebar secara
+      horizontal dari kolom 1 sampai kolom 4 sehingga item tersebut menjadi
+      lebih lebar dari item lainnya.
+    </div>
+  </body>
+</html>

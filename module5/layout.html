@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout CSS Grid</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "menu main right"
+          "menu footer footer";
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 80px 150px 80px;
+        gap: 10px;
+        max-width: 800px;
+        margin: auto;
+        border: 4px solid #2a77b8;
+        padding: 10px;
+      }
+
+      .header {
+        grid-area: header;
+        background: #c9d9e8;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .menu {
+        grid-area: menu;
+        background: #c9d9e8;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .main {
+        grid-area: main;
+        background: #c9d9e8;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .right {
+        grid-area: right;
+        background: #c9d9e8;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .footer {
+        grid-area: footer;
+        background: #c9d9e8;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="menu">Menu</div>
+      <div class="main">Main</div>
+      <div class="right">Right</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
+```

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Galeri Foto Flexbox</title>
+    <style>
+      .galeri_wadah {
+        display: flex;
+        flex-wrap: wrap; /* Skenario 4: Agar foto pindah ke baris baru */
+        justify-content: center; /* Skenario 6: Posisi di tengah */
+        gap: 10px; /* Jarak antar foto */
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+
+      .foto_item {
+        /* (z) ganti dengan angka terakhir NRP Anda, contoh: 150px */
+        width: 150px;
+        height: 150px;
+        border: 2px solid #333; /* Menggunakan Box Model: Border */
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Gallery Foto (18 Item)</h2>
+    <div class="galeri_wadah">
+      <img src="image/1.jpg" class="foto_item" />
+      <img src="image/2.jpg" class="foto_item" />
+      <img src="image/3.jpg" class="foto_item" />
+      <img src="image/4.jpg" class="foto_item" />
+      <img src="image/5.jpg" class="foto_item" />
+      <img src="image/6.jpg" class="foto_item" />
+      <img src="image/7.jpg" class="foto_item" />
+      <img src="image/8.jpg" class="foto_item" />
+      <img src="image/9.jpg" class="foto_item" />
+      <img src="image/10.jpg" class="foto_item" />
+      <img src="image/11.jpg" class="foto_item" />
+      <img src="image/12.jpg" class="foto_item" />
+      <img src="image/13.jpg" class="foto_item" />
+      <img src="image/14.jpg" class="foto_item" />
+      <img src="image/15.jpg" class="foto_item" />
+      <img src="image/16.jpg" class="foto_item" />
+      <img src="image/17.jpg" class="foto_item" />
+      <img src="image/18.jpg" class="foto_item" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gabungan Seluruh Skenario Flexbox</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px;
+        margin-top: 40px;
+      }
+
+      /* Wadah Utama sesuai modul */
+      .wadah_flex {
+        display: flex; /* Skenario 1: Menjadi fleksibel */
+        background-color: lightgrey;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      /* Skenario 2: Style untuk setiap div anak */
+      .wadah_flex > div {
+        background-color: #3498db;
+        margin: 10px;
+        padding: 20px;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        min-width: 50px;
+      }
+
+      /* Skenario 3: Flex Direction (Arah) */
+      .s3-direction {
+        flex-direction: row-reverse;
+      }
+
+      /* Skenario 4: Flex Wrap (Membungkus) */
+      .s4-wrap {
+        flex-wrap: wrap;
+      }
+
+      /* Skenario 5: Flex Flow (Shorthand Direction & Wrap) */
+      .s5-flow {
+        flex-flow: column wrap;
+        height: 300px;
+      }
+
+      /* Skenario 6: Justify Content (Perataan Horizontal) */
+      .s6-justify {
+        justify-content: space-around;
+      }
+
+      .kesimpulan {
+        font-size: 0.9em;
+        color: #555;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ujicoba Seluruh Skenario Flexbox</h1>
+
+    <h2>Skenario 1 & 2: Basic Flex & Item Styling</h2>
+    <div class="wadah_flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p class="kesimpulan">
+      Kesimpulan: Elemen anak otomatis berjejer horizontal dan memiliki style
+      (margin/padding) yang rapi.
+    </p>
+
+    <h2>Skenario 3: Flex Direction (row-reverse)</h2>
+    <div class="wadah_flex s3-direction">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p class="kesimpulan">
+      Kesimpulan: <code>flex-direction</code> menentukan arah baris/kolom. Di
+      sini urutan dibalik dari kanan ke kiri.
+    </p>
+
+    <h2>Skenario 4: Flex Wrap (dengan 12 item)</h2>
+    <div class="wadah_flex s4-wrap">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+    <p class="kesimpulan">
+      Kesimpulan: <code>flex-wrap: wrap</code> membuat item turun ke baris baru
+      jika ruang tidak cukup.
+    </p>
+
+    <h2>Skenario 5: Flex Flow (column wrap)</h2>
+    <div class="wadah_flex s5-flow">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p class="kesimpulan">
+      Kesimpulan: <code>flex-flow</code> menggabungkan direction dan wrap dalam
+      satu perintah.
+    </p>
+
+    <h2>Skenario 6: Justify Content (space-around)</h2>
+    <div class="wadah_flex s6-justify">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p class="kesimpulan">
+      Kesimpulan: <code>justify-content</code> mengatur pembagian ruang kosong
+      antar item.
+    </p>
+  </body>
+</html>

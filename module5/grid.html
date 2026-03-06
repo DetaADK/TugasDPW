@@ -1,0 +1,142 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Belajar CSS Grid Box</title>
+
+    <style>
+      h1 {
+        margin-top: 40px;
+      }
+
+      /* style dasar */
+      .tempat_grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196f3;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .item_grid {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      /* skenario 2 */
+      .inline_grid {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+
+      /* skenario 3 */
+      .grid_gap_kolom {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 50px;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+
+      /* skenario 4 */
+      .grid_gap {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 50px;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+
+      .kesimpulan {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- SKENARIO 1 -->
+    <h1>Skenario 1</h1>
+    <div class="tempat_grid">
+      <div class="item_grid">1</div>
+      <div class="item_grid">2</div>
+      <div class="item_grid">3</div>
+      <div class="item_grid">4</div>
+      <div class="item_grid">5</div>
+      <div class="item_grid">6</div>
+      <div class="item_grid">7</div>
+      <div class="item_grid">8</div>
+      <div class="item_grid">9</div>
+    </div>
+
+    <div class="kesimpulan">
+      Kesimpulan Skenario 1: display:grid digunakan untuk membuat layout
+      berbentuk grid dengan baris dan kolom.
+    </div>
+
+    <!-- SKENARIO 2 -->
+    <h1>Skenario 2</h1>
+    <div class="inline_grid">
+      <div class="item_grid">1</div>
+      <div class="item_grid">2</div>
+      <div class="item_grid">3</div>
+      <div class="item_grid">4</div>
+      <div class="item_grid">5</div>
+      <div class="item_grid">6</div>
+      <div class="item_grid">7</div>
+      <div class="item_grid">8</div>
+      <div class="item_grid">9</div>
+    </div>
+
+    <div class="kesimpulan">
+      Kesimpulan Skenario 2: inline-grid bekerja seperti grid tetapi container
+      hanya mengambil lebar sesuai kontennya (inline).
+    </div>
+
+    <!-- SKENARIO 3 -->
+    <h1>Skenario 3</h1>
+    <div class="grid_gap_kolom">
+      <div class="item_grid">1</div>
+      <div class="item_grid">2</div>
+      <div class="item_grid">3</div>
+      <div class="item_grid">4</div>
+      <div class="item_grid">5</div>
+      <div class="item_grid">6</div>
+      <div class="item_grid">7</div>
+      <div class="item_grid">8</div>
+      <div class="item_grid">9</div>
+    </div>
+
+    <div class="kesimpulan">
+      Kesimpulan Skenario 3: grid-column-gap mengatur jarak antar kolom dan
+      grid-row-gap mengatur jarak antar baris.
+    </div>
+
+    <!-- SKENARIO 4 -->
+    <h1>Skenario 4</h1>
+    <div class="grid_gap">
+      <div class="item_grid">1</div>
+      <div class="item_grid">2</div>
+      <div class="item_grid">3</div>
+      <div class="item_grid">4</div>
+      <div class="item_grid">5</div>
+      <div class="item_grid">6</div>
+      <div class="item_grid">7</div>
+      <div class="item_grid">8</div>
+      <div class="item_grid">9</div>
+    </div>
+
+    <div class="kesimpulan">
+      Kesimpulan Skenario 4: grid-gap adalah shorthand untuk mengatur jarak
+      baris dan kolom sekaligus.
+    </div>
+  </body>
+</html>
+```

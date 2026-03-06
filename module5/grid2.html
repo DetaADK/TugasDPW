@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grid 2</title>
+
+    <style>
+      .grid-container {
+        display: grid;
+        grid-gap: 50px;
+        background-color: #2196f3;
+        padding: 10px;
+
+        /* SKENARIO 2 (ubah nilai ini sesuai tugas) */
+        grid-template-columns: auto auto auto auto;
+      }
+
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+      }
+
+      .item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Latihan CSS Grid</h2>
+
+    <div class="grid-container">
+      <div class="item1">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+    </div>
+    <div>
+      Kesimpulan: Pada skenario ini digunakan CSS Grid untuk mengatur tata letak
+      elemen. Properti <b>grid-column-start:1</b> dan
+      <b>grid-column-end:3</b> membuat item pertama melebar dari kolom 1 sampai
+      kolom 3.
+    </div>
+  </body>
+</html>
