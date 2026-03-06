@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Halaman Audio - Deta Aprilka</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Deta Aprilka Dario Karnavaro" />
+    <meta name="nim" content="253307051" />
+
+    <style>
+      /* Style tetap sama dengan index.html untuk konsistensi */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+      nav {
+        float: left;
+        width: 30%;
+        background: #ccc;
+        padding: 20px;
+        min-height: 300px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        min-height: 300px;
+      }
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Judul Website</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gambar.html">Gambar</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li><a href="audio.html">Audio</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="svg.html">SVG</a></li>
+          <li><a href="canvas.html">Canvas</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>Implementasi Media Audio</h1>
+
+        <audio controls autoplay>
+          <source src="gambar/audio1.mp3" type="audio/mpeg" />
+          Browser tidak mendukung pemutar audio.</audio
+        ><br /><br />
+
+        <audio controls muted>
+          <source src="gambar/audio2.mp3" type="audio/mpeg" />
+          Browser tidak mendukung pemutar audio.
+        </audio>
+
+        <hr />
+        <h3>Kesimpulan</h3>
+        <p>
+          Berdasarkan pengamatan, atribut <b>autoplay</b> digunakan agar audio
+          berputar otomatis saat halaman dimuat (namun pada browser modern, ini
+          seringkali diblokir kecuali dalam keadaan <i>muted</i>). Atribut
+          <b>muted</b> berfungsi untuk menonaktifkan suara secara default saat
+          audio diputar. <br /><br />
+          <b>Deta Aprilka Dario Karnavaro - 253307051</b>
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Footer - copyright@Deta_253307051_2026</p>
+    </footer>
+  </body>
+</html>

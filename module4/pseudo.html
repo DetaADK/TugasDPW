@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Pseudo-class Selector - Deta Aprilka</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Deta Aprilka Dario Karnavaro" />
+    <meta name="nim" content="253307051" />
+    <style>
+      /* Menyembunyikan paragraf secara default */
+      p {
+        display: none;
+        background-color: darkgray;
+        padding: 20px;
+      }
+
+      /* Menampilkan paragraf saat div di-hover */
+      div:hover p {
+        display: block;
+      }
+
+      /* Link yang berubah warna saat kursor di atasnya */
+      a:hover {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      style="
+        background-color: #666;
+        padding: 20px;
+        text-align: center;
+        color: white;
+      "
+    >
+      <h2>Belajar Pseudo-class Selector</h2>
+    </header>
+
+    <div
+      style="
+        border: 2px dashed #333;
+        padding: 20px;
+        margin: 20px;
+        cursor: pointer;
+      "
+    >
+      Letakkan kursor disini untuk melihat div element
+      <p>Saya adalah element p</p>
+    </div>
+
+    <div style="margin: 20px">
+      <a href="#">Coba arahkan mouse ke link ini!</a>
+    </div>
+
+    <footer style="margin-top: 50px">
+      <hr />
+      <p style="display: block; background: none">
+        Deta Aprilka Dario Karnavaro - 253307051
+      </p>
+    </footer>
+  </body>
+</html>

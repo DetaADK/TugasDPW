@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Combinator Selector - Deta Aprilka</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Deta Aprilka Dario Karnavaro" />
+    <meta name="nim" content="253307051" />
+
+    <style>
+      /* CSS Combinator Selectors berdasarkan instruksi */
+
+      /* 1. Descendant Selector (Spasi): Memilih semua <p> di dalam <div> */
+      div p {
+        color: red;
+      }
+
+      /* 2. Child Selector (>): Memilih <p> yang merupakan anak langsung dari <div> */
+      div > p {
+        background-color: yellow;
+      }
+
+      /* 3. Adjacent Sibling Selector (+): Memilih <p> tepat setelah <div> ditutup */
+      div + p {
+        background-color: darkgray;
+      }
+
+      /* 4. General Sibling Selector (~): Memilih semua <p> yang merupakan saudara dari <div> */
+      div ~ p {
+        color: cyan;
+      }
+
+      /* Style tambahan untuk kejelasan visual */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      div {
+        border: 1px dashed #666;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Belajar Combinator Selector</h1>
+    </header>
+
+    <div>
+      <p>
+        This is a paragraph. <b>Kesimpulan:</b> Paragraf ini berwarna merah
+        karena ia berada di dalam div (Descendant) dan berlatar kuning karena ia
+        anak langsung (Child) dari div.
+      </p>
+      <p>
+        This is a paragraph. <b>Kesimpulan:</b> Paragraf ini juga merah dan
+        berlatar kuning karena masih merupakan anak langsung di dalam elemen
+        div.
+      </p>
+    </div>
+
+    <p>
+      This is a paragraph. <b>Kesimpulan:</b> Paragraf ini berlatar abu-abu
+      (Adjacent Sibling) karena terletak tepat setelah elemen div ditutup, dan
+      berwarna cyan (General Sibling) karena masih satu level dengan div.
+    </p>
+    <p>
+      This is a paragraph. <b>Kesimpulan:</b> Paragraf ini hanya berwarna cyan
+      (General Sibling) karena ia adalah saudara dari div namun tidak terletak
+      tepat setelahnya.
+    </p>
+
+    <footer>
+      <hr />
+      <p style="color: black; background: none">
+        Deta Aprilka Dario Karnavaro - 253307051
+      </p>
+    </footer>
+  </body>
+</html>

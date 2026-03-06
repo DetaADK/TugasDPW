@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Galeri Gambar - Deta Aprilka</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Deta Aprilka Dario Karnavaro" />
+    <meta name="nim" content="253307051" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      nav {
+        float: left;
+        width: 30%;
+        background: #ccc;
+        padding: 20px;
+        min-height: 300px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        min-height: 300px;
+      }
+
+      /* Grid Layout untuk Gambar */
+      .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom */
+        gap: 15px; /* Jarak antar gambar */
+      }
+      .gallery-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+        .gallery-container {
+          grid-template-columns: 1fr;
+        } /* Jadi 1 kolom di layar kecil */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Judul Website</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gambar.html">Gambar</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li><a href="audio.html">Audio</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="svg.html">SVG</a></li>
+          <li><a href="canvas.html">Canvas</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>Gambar Pemandangan</h1>
+        <div class="gallery-container">
+          <img
+            src="gambar/g1.jpeg"
+            alt="Pemandangan 1"
+            onclick="alert('Ini gambar pemandangan 1')"
+          />
+
+          <img
+            src="gambar/g2.jpeg"
+            alt="Pemandangan 2"
+            onmouseover="this.style.transform = 'scale(1.1)'"
+            onmouseout="this.style.transform = 'scale(1)'"
+          />
+
+          <img
+            src="gambar/g3.jpeg"
+            alt="Pemandangan 3"
+            onclick="alert('Kamu mengklik gambar 3')"
+          />
+
+          <img
+            src="gambar/g4.jpeg"
+            alt="Pemandangan 4"
+            onmouseover="this.style.opacity = '0.5'"
+            onmouseout="this.style.opacity = '1'"
+          />
+
+          <img
+            src="gambar/g5.jpeg"
+            alt="Pemandangan 5"
+            onclick="alert('Ini gambar ke 5')"
+          />
+
+          <img
+            src="gambar/g6.jpeg"
+            alt="Pemandangan 6"
+            onmouseover="this.style.border = '5px solid red'"
+            onmouseout="this.style.border = 'none'"
+          />
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>Footer - copyright@Deta_253307051_2026</p>
+    </footer>
+  </body>
+</html>

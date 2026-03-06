@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Halaman Video - Deta Aprilka</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Deta Aprilka Dario Karnavaro" />
+    <meta name="nim" content="253307051" />
+
+    <style>
+      /* Style tetap konsisten dengan index.html */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+      nav {
+        float: left;
+        width: 30%;
+        background: #ccc;
+        padding: 20px;
+        min-height: 300px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        min-height: 300px;
+      }
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+      video,
+      iframe {
+        margin-bottom: 20px;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Judul Website</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gambar.html">Gambar</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li><a href="audio.html">Audio</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="svg.html">SVG</a></li>
+          <li><a href="canvas.html">Canvas</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>Implementasi Media Video</h1>
+
+        <h3>Video Lokal (MP4)</h3>
+        <video width="420" height="315" controls autoplay muted>
+          <source src="gambar/video/Skateboard.mp4" type="video/mp4" />
+          Browser tidak mendukung pemutar video.
+        </video>
+
+        <br />
+
+        <h3>Video dari YouTube (Iframe)</h3>
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/fn3KWM1kuAw"
+        >
+        </iframe>
+
+        <hr />
+        <h3>Kesimpulan</h3>
+        <p>
+          Penggunaan elemen <code>&lt;video&gt;</code> memungkinkan kita memutar
+          file video lokal dengan kontrol penuh seperti <i>play</i>,
+          <i>pause</i>, dan volume. Atribut <b>autoplay</b> yang digabung dengan
+          <b>muted</b> memastikan video dapat diputar otomatis saat halaman
+          dimuat tanpa melanggar kebijakan kebijakan privasi browser. Selain
+          itu, penggunaan <code>&lt;iframe&gt;</code> sangat efektif untuk
+          menyematkan konten dari pihak ketiga seperti YouTube tanpa membebani
+          penyimpanan server lokal kita. <br /><br />
+          <b>Deta Aprilka Dario Karnavaro - 253307051</b>
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Footer - copyright@Deta_253307051_2026</p>
+    </footer>
+  </body>
+</html>
