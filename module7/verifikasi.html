@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Program Verifikasi Password</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #4e73df, #1cc88a);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        background: #ffffff;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        width: 350px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        transition: 0.3s;
+      }
+
+      input[type="password"]:focus {
+        border-color: #4e73df;
+        outline: none;
+        box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+      }
+
+      button {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        background-color: #4e73df;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background-color: #2e59d9;
+      }
+
+      .error {
+        color: red;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .success {
+        color: green;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Verifikasi Password</h2>
+
+      <form name="formTes">
+        <label>Password Pengganti:</label>
+        <input type="password" name="password_1" required />
+
+        <label>Masukkan Password Lagi:</label>
+        <input type="password" name="password_2" required />
+
+        <button type="button" onclick="cekPassword()">Proses</button>
+
+        <div id="pesan"></div>
+      </form>
+    </div>
+
+    <script>
+      function cekPassword() {
+        var pass1 = document.formTes.password_1.value;
+        var pass2 = document.formTes.password_2.value;
+        var pesan = document.getElementById("pesan");
+
+        if (pass1 === "" || pass2 === "") {
+          pesan.innerHTML = "Password tidak boleh kosong!";
+          pesan.className = "error";
+        } else if (pass1 !== pass2) {
+          pesan.innerHTML = "Password yang Anda masukkan tidak sama!";
+          pesan.className = "error";
+        } else {
+          pesan.innerHTML = "Password berhasil diverifikasi!";
+          pesan.className = "success";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Download Dialog dengan Progress Bar</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI CSS -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+
+    <!-- jQuery UI JS -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 50px;
+        background-color: #f4f4f4;
+      }
+
+      button {
+        padding: 8px 15px;
+        border: 1px solid #aaa;
+        background: #eaeaea;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      button:hover {
+        background: #ddd;
+      }
+
+      #progressbar {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Download File</h2>
+    <button id="startDownload">Download</button>
+
+    <!-- Dialog -->
+    <div id="dialog" title="Downloading File">
+      <p id="status">Proses download sedang berjalan...</p>
+      <div id="progressbar"></div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        var progress = 0;
+        var interval;
+
+        // Inisialisasi progressbar
+        $("#progressbar").progressbar({
+          value: 0,
+        });
+
+        // Inisialisasi dialog
+        $("#dialog").dialog({
+          autoOpen: false,
+          modal: true,
+          closeOnEscape: false,
+          open: function () {
+            $(".ui-dialog-titlebar-close").hide(); // sembunyikan tombol close
+          },
+        });
+
+        // Event tombol download
+        $("#startDownload").click(function () {
+          progress = 0;
+          $("#progressbar").progressbar("value", progress);
+          $("#status").text("Proses download sedang berjalan...");
+          $("#dialog").dialog("open");
+
+          interval = setInterval(function () {
+            progress += 5;
+            $("#progressbar").progressbar("value", progress);
+
+            if (progress >= 100) {
+              clearInterval(interval);
+              $("#status").text("Download selesai!");
+              setTimeout(function () {
+                $("#dialog").dialog("close");
+              }, 1500);
+            }
+          }, 200);
+        });
+      });
+    </script>
+  </body>
+</html>

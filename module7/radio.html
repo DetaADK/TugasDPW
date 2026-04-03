@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Mengakses Objek Radio</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        margin-top: 80px;
+        text-align: center;
+        background-color: #f9f9f9;
+      }
+
+      .box {
+        display: inline-block;
+        text-align: left;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background: white;
+      }
+
+      input {
+        margin: 5px;
+      }
+    </style>
+
+    <script>
+      function info() {
+        let radios = document.forms["formTes"].elements["radioMusik"];
+        let hasil = "";
+
+        for (let i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            hasil = radios[i].value;
+          }
+        }
+
+        document.forms["formTes"].elements["fieldMusik"].value = hasil;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Pilih Musik Favorit</h2>
+
+    <div class="box">
+      <form name="formTes">
+        <p>Klik pada musik yang paling Anda sukai:</p>
+
+        <input type="radio" name="radioMusik" value="Jazz" onclick="info()" />
+        Jazz <br />
+        <input
+          type="radio"
+          name="radioMusik"
+          value="Keroncong"
+          onclick="info()"
+        />
+        Keroncong <br />
+        <input
+          type="radio"
+          name="radioMusik"
+          value="Dangdut"
+          onclick="info()"
+        />
+        Dangdut <br />
+        <input
+          type="radio"
+          name="radioMusik"
+          value="Lainnya"
+          onclick="info()"
+        />
+        Lainnya <br /><br />
+
+        Info: <br />
+        <input type="text" name="fieldMusik" size="30" readonly />
+      </form>
+    </div>
+  </body>
+</html>

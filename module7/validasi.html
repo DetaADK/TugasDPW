@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Validasi Masukan</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        margin-top: 100px;
+        background-color: #eef;
+      }
+
+      input {
+        padding: 8px;
+        margin: 5px;
+      }
+
+      button {
+        padding: 8px 15px;
+        cursor: pointer;
+      }
+    </style>
+
+    <script>
+      function cekNama(form) {
+        if (form.nama.value == "") {
+          alert("Nama harus dimasukkan");
+          form.nama.focus();
+          return false;
+        }
+
+        alert("Terima kasih, " + form.nama.value);
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Form Validasi</h2>
+
+    <form name="formku">
+      Nama: <input type="text" name="nama" /><br />
+      <button type="button" onclick="cekNama(this.form)">Kirim</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Menu dengan jQuery</title>
+
+    <!-- CDN jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        width: 400px;
+        background: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+      }
+
+      h2 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      p {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      ul.menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul.menu li {
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-top: 5px;
+        cursor: pointer;
+        background: #eee;
+        border-radius: 4px;
+      }
+
+      ul.menu li:hover {
+        background: #ddd;
+      }
+
+      .submenu {
+        display: none;
+        margin-top: 5px;
+        margin-left: 15px;
+      }
+
+      .submenu li {
+        background: #fafafa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Pengertian jQuery</h2>
+      <p>
+        <strong>jQuery</strong> adalah library JavaScript yang dirancang untuk
+        mempermudah penulisan kode JavaScript, terutama dalam manipulasi HTML,
+        event handling, animasi, dan AJAX. Dengan jQuery, penulisan kode menjadi
+        lebih singkat dan mudah dipahami.
+      </p>
+
+      <h2>Menu jQuery</h2>
+      <ul class="menu">
+        <li>
+          Produk
+          <ul class="submenu">
+            <li>Laptop</li>
+            <li>Handphone</li>
+            <li>Tablet</li>
+          </ul>
+        </li>
+        <li>
+          Layanan
+          <ul class="submenu">
+            <li>Service</li>
+            <li>Konsultasi</li>
+          </ul>
+        </li>
+        <li>Kontak</li>
+      </ul>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".menu li").click(function () {
+          $(this).children(".submenu").slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>

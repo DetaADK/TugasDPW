@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Confirm Box</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        margin-top: 100px;
+        background-color: #f4f4f4;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>JavaScript Confirm Box</h2>
+
+    <button onclick="myFunction()">Klik Ini</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        let txt;
+
+        if (confirm("Apakah Anda akan logout?")) {
+          txt = "Anda mengklik OK";
+        } else {
+          txt = "Anda mengklik Cancel";
+        }
+
+        document.getElementById("demo").innerHTML = txt;
+      }
+    </script>
+  </body>
+</html>

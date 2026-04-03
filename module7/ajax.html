@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Contoh jQuery dan AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        background-color: #f9f9f9;
+      }
+
+      .container {
+        background: #ffffff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        max-width: 500px;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      p {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      button {
+        padding: 6px 12px;
+        border: 1px solid #999;
+        background: #eee;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      button:hover {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="teks">Halo Dunia!</h2>
+
+      <p>
+        <strong>AJAX (Asynchronous JavaScript and XML)</strong> adalah teknik
+        dalam pemrograman web yang digunakan untuk mengambil atau mengirim data
+        ke server tanpa harus memuat ulang (reload) seluruh halaman. Dengan
+        AJAX, halaman web menjadi lebih interaktif dan responsif.
+      </p>
+
+      <button id="tombol">Klik Saya</button>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#tombol").click(function () {
+          $("#teks").text("Teks Berhasil Diubah!");
+        });
+      });
+    </script>
+  </body>
+</html>
