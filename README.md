@@ -2,7 +2,7 @@
 
 Selamat datang di repositori **Desain dan Pemrograman Web**. Repositori ini berisi kumpulan tugas, latihan, dan modul praktikum yang dikerjakan selama perkuliahan.
 
-## 👤 Identitas Dosen
+## 👤 Identitas Mahasiswa
 
 - **Nama:** Deta Aprilka Dario Karnavaro
 - **Nim:** 253307051
