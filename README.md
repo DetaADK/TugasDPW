@@ -28,9 +28,9 @@ Berikut adalah daftar modul yang telah diselesaikan. Silakan klik pada nama modu
 |  5  | **Modul 5**  | Modul Praktikum 5 - CSS Layout          | [Lihat Modul](https://drive.google.com/file/d/1kOA0ZUzrkagsVKmrjCWfT-34aRgY1CNp/view?usp=drivesdk) |
 |  6  | **Modul 6**  | Modul Praktikum 6 - CSS Framework       |       [Lihat Modul](https://drive.google.com/file/d/1Wa-awgpvsE9mkrW5vjix_OkT5Raj65ld/view)        |
 |  7  | **Modul 7**  | Modul Praktikum 7 - Javascript          | [Lihat Modul](https://drive.google.com/file/d/1hmRq6HRrHIJaFgQ0bBE5Lc6xpGd5HXZa/view?usp=sharing)  |
-|  8  | **Modul 8**  | Modul Praktikum 8                       |                         [Lihat Modul](https://github.com/anggerbinuko/dpw)                         |
-|  9  | **Modul 9**  | Modul Praktikum 9                       |                         [Lihat Modul](https://github.com/anggerbinuko/dpw)                         |
-| 10  | **Modul 10** | Modul Praktikum 10                      |                         [Lihat Modul](https://github.com/anggerbinuko/dpw)                         |
+|  8  | **Modul 8**  | Modul Praktikum 8                       |                         [Lihat Modul](https://github.com/DetaADK/TugasDPW)                         |
+|  9  | **Modul 9**  | Modul Praktikum 9                       |                         [Lihat Modul](https://github.com/DetaADK/TugasDPW)                         |
+| 10  | **Modul 10** | Modul Praktikum 10                      |                         [Lihat Modul](https://github.com/DetaADK/TugasDPW)                         |
 
 ---
 
