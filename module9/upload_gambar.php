@@ -13,7 +13,7 @@
 </form>
 
 <?php
-// CEK AGAR TIDAK ERROR SAAT PERTAMA KALI DIBUKA
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["gambar"])) {
 
     $target_dir = "gambar/";
